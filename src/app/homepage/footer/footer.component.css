@@ -1,0 +1,97 @@
+.footer-cont {
+  width: 100%;
+  height: auto;
+  border: 2px solid yellow;
+  float: left;
+}
+
+div footer {
+  width: 100%;
+  height: auto;
+  background-color: #2F2E41;
+  float: left;
+}
+
+footer .footer-content {
+  width: 100%;
+  height: auto;
+  border: red;
+  margin: 130px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-content .heading {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  line-height: 35px;
+  margin-bottom: 5px;
+}
+
+footer .footer-content .paragraph {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 1rem;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+footer .footer-content .btn-cont {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 5px;
+}
+
+footer .footer-content .btn-cont .btn-social {
+  margin: 18px 20px;
+  cursor: pointer;
+  outline-offset: 4px;
+  outline: 1px solid #aca9a9;
+  border-radius: 5px;
+  padding: 6px;
+  border: none;
+}
+
+.follow-me {
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 15px;
+}
+
+footer hr {
+  color: #FFFFFF;
+  width: 100%;
+  height: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0px;
+  float: right;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+footer .copy-right {
+  color: #FFFFFF;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}

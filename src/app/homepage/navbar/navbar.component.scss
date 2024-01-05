@@ -1,0 +1,44 @@
+.navbar{
+    background-image: linear-gradient(to right ,var(--bg1), var(--bg2));
+    padding: 10px 0px;
+}
+.nav-link{
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    
+}
+.navbar-brand{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.btn-download{
+    color: var(--color1);
+    font-size:13px;
+    font-weight:500;
+    background-image: linear-gradient(to right ,var(--bg1), var(--bg2));
+    padding:8px 10px;
+    border: 1px solid var(--bg1);
+    border-radius: 5px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    letter-spacing: 2px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+

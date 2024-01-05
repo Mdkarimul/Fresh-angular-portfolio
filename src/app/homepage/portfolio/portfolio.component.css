@@ -1,0 +1,118 @@
+.portfolio-content {
+  width: 100%;
+  height: auto;
+  float: left;
+  border: 2px solid rgb(135, 135, 153);
+}
+
+.service-heading {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  margin: 100px 0px;
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+
+.service-heading .sub-title {
+  color: #9318eb;
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.service-heading .title {
+  color: #9318eb;
+  font-size: 1.5rem;
+}
+
+.front-end {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px 5px rgba(6, 6, 124, 0.1);
+  padding: 20px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.front-end .img-cont {
+  margin: auto;
+  width: 90%;
+  height: 60%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #005;
+}
+
+.front-end .img-cont img {
+  width: 200px;
+  height: 150px;
+}
+
+.front-end .text-cont {
+  width: 100%;
+  height: 40%;
+}
+
+.front-end .text-cont {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.front-end .text-cont .heading {
+  text-transform: uppercase;
+  color: #005;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.front-end .text-cont .paragraph {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.front-end .text-cont button {
+  border: 1px solid #9318eb;
+  width: 40%;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(147, 24, 235, 0.2823529412);
+}
+
+.btn-cont {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-github, .btn-live {
+  border: 1px solid #9318eb;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgba(147, 24, 235, 0.2823529412);
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 15px;
+}
+
+.btn-github, .btn-live {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

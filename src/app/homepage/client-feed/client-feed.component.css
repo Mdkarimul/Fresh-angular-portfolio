@@ -1,0 +1,117 @@
+.client-feed-cont {
+  width: 90%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  float: left;
+  border: 2px solid blue;
+}
+
+.service-heading {
+  width: 90%;
+  height: auto;
+  float: left;
+  margin: 80px 0px;
+  padding: 0px 20px;
+}
+
+.service-heading .sub-title {
+  color: #9318eb;
+  font-size: 1rem;
+}
+
+.service-heading .title {
+  color: #9318eb;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(rgba(0, 0, 85, 0.349), var(--color3));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.feed {
+  width: 100%;
+  height: auto;
+  float: left;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.feed .message-cont {
+  width: 100%;
+  height: auto;
+  margin-left: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+
+.feed .message {
+  width: 70%;
+  height: auto;
+  box-shadow: 3px 2px 1px 4px #2F2E41;
+  margin: 0px 15px;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.feed .message p {
+  font-size: 17px;
+  text-align: justify;
+  font-family: sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+.feed .message q:before {
+  content: open-quote;
+  font-size: 50px;
+}
+
+.feed .message q:after {
+  content: close-quote;
+  font-size: 50px;
+  position: absolute;
+  margin-left: 20px;
+}
+
+.feed .message .title {
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px 0px 0px 0px;
+  text-transform: uppercase;
+}
+
+.feed .message .name {
+  font-size: 16px;
+  display: block;
+  position: relative;
+}
+
+.feed .message .name:after {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  content: "";
+  background-color: #5b2880;
+  margin: 20px 0px 0px 0px;
+  border-top-left-radius: 50px;
+}
+
+.feed .message-cont .img-cont {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background-image: url("../../../assets/about_pic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+  position: relative;
+  top: -10px;
+}

@@ -1,0 +1,201 @@
+
+
+<div class="container-fluid py-4 portfolio-content" id="projects">
+ 
+
+
+    
+           <div class="project-heading">
+            <!-- <div class="subtitle-cont">
+                <h4 class="sub-title">
+                  <span class="one">p</span>
+                  <span class="two">r</span>
+                  <span class="three">o</span>
+                  <span class="four">j</span>
+                  <span class="five">e</span>
+                  <span class="six">c</span>
+                  <span class="seven">t</span>
+                  <span class="seven">s</span>
+                  
+                </h4>
+              </div> -->
+            
+            <h2 class="title">Portfolio</h2>
+            <ul>
+                <li [class.active]="all" (click)="project_tab('all')" #ele><span>All</span></li>
+                <li [class.active]="web" (click)="project_tab('web')" #ele><span>Web</span></li>
+                <li [class.active]="mobile" (click)="project_tab('mobile')" #ele><span>Mobile</span></li>
+                <li [class.active]="others" (click)="project_tab('others')" #ele><span>Others</span></li>
+            </ul>
+        </div>  
+
+      
+      <div class="row p-0 m-0 mb-4">
+        <div class="col-md-4">
+            <div class="front-end">
+                <div class="img-cont">
+                 <img src="../../../assets/Angular_project_one.PNG" alt=""> 
+                </div>
+                <div class="text-cont">
+                 <h3 class="heading">Responsive angular SPA</h3>
+                 <p class="paragraph"><b>Tech : </b>Html , Css , Bootstrap , Type script , Angular </p>
+                 <div class="btn-cont">
+                    <button class="btn-github"  >
+                      
+                        <span style="width: 50px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 16 16" id="github"><path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path></svg>
+                        </span>
+                       
+                    </button>
+                    <button class="btn-live" >
+                        <a href="https://mdkarimul.netlify.app">
+                        <span style="width: 50px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" id="live-streaming"><path fill="#000" fill-rule="evenodd" d="M12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M8.82789 8.6971C7.05737 10.5181 7.05737 13.4819 8.82789 15.3029L7.39394 16.6971C4.86869 14.0998 4.86869 9.90017 7.39394 7.3029L8.82789 8.6971ZM15.1721 15.3029C16.9426 13.4819 16.9426 10.5181 15.1721 8.6971L16.6061 7.3029C19.1313 9.90017 19.1313 14.0998 16.6061 16.6971L15.1721 15.3029Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M6.69609 6.70772C3.76797 9.63076 3.76797 14.3692 6.69609 17.2923L5.2831 18.7077C1.5723 15.0033 1.5723 8.99665 5.2831 5.29228L6.69609 6.70772ZM17.3039 17.2923C20.232 14.3692 20.232 9.63077 17.3039 6.70772L18.7169 5.29228C22.4277 8.99665 22.4277 15.0033 18.7169 18.7077L17.3039 17.2923Z" clip-rule="evenodd"></path></svg>
+                        </span>
+                        </a>
+                    </button>
+                   </div>
+              </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="front-end">
+                <div class="img-cont">
+                <img src="../../../assets/Angular_project_two.PNG" width="100%" alt="">
+                </div>
+                <div class="text-cont">
+                 <h3 class="heading">Full stack LMS with Angular</h3>
+                 <p class="paragraph"><b>Tech : </b>Html , Css , Bootstrap , Type script , Angular </p>
+                 <div class="btn-cont">
+                    <button class="btn-github"  >
+                        <span style="width: 50px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 16 16" id="github"><path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path></svg>
+                        </span>
+                    </button>
+                    <button class="btn-live" >
+                        <a href="https://e-learning-karimul.netlify.app">
+                            <span style="width: 50px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" id="live-streaming"><path fill="#000" fill-rule="evenodd" d="M12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M8.82789 8.6971C7.05737 10.5181 7.05737 13.4819 8.82789 15.3029L7.39394 16.6971C4.86869 14.0998 4.86869 9.90017 7.39394 7.3029L8.82789 8.6971ZM15.1721 15.3029C16.9426 13.4819 16.9426 10.5181 15.1721 8.6971L16.6061 7.3029C19.1313 9.90017 19.1313 14.0998 16.6061 16.6971L15.1721 15.3029Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M6.69609 6.70772C3.76797 9.63076 3.76797 14.3692 6.69609 17.2923L5.2831 18.7077C1.5723 15.0033 1.5723 8.99665 5.2831 5.29228L6.69609 6.70772ZM17.3039 17.2923C20.232 14.3692 20.232 9.63077 17.3039 6.70772L18.7169 5.29228C22.4277 8.99665 22.4277 15.0033 18.7169 18.7077L17.3039 17.2923Z" clip-rule="evenodd"></path></svg>
+                            </span>
+                        </a>
+                    </button>
+                   </div>
+              </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="front-end">
+                <div class="img-cont">
+                <img src="../../../assets/project_one" width="100%" alt="">
+                </div>
+                <div class="text-cont">
+                 <h3 class="heading">responsive front-end design</h3>
+                 <p class="paragraph">It is a long established fact that a reader will be distracted by the readable </p>
+                 <div class="btn-cont">
+                    <button class="btn-github"  >
+                       
+                        <span style="width: 50px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 16 16" id="github"><path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path></svg>
+                        </span>
+                    </button>
+                    <button class="btn-live" >
+                      
+                        <span style="width: 50px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" id="live-streaming"><path fill="#000" fill-rule="evenodd" d="M12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M8.82789 8.6971C7.05737 10.5181 7.05737 13.4819 8.82789 15.3029L7.39394 16.6971C4.86869 14.0998 4.86869 9.90017 7.39394 7.3029L8.82789 8.6971ZM15.1721 15.3029C16.9426 13.4819 16.9426 10.5181 15.1721 8.6971L16.6061 7.3029C19.1313 9.90017 19.1313 14.0998 16.6061 16.6971L15.1721 15.3029Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M6.69609 6.70772C3.76797 9.63076 3.76797 14.3692 6.69609 17.2923L5.2831 18.7077C1.5723 15.0033 1.5723 8.99665 5.2831 5.29228L6.69609 6.70772ZM17.3039 17.2923C20.232 14.3692 20.232 9.63077 17.3039 6.70772L18.7169 5.29228C22.4277 8.99665 22.4277 15.0033 18.7169 18.7077L17.3039 17.2923Z" clip-rule="evenodd"></path></svg>
+                        </span>
+                    </button>
+                   </div>
+              </div>
+              </div>
+        </div>
+     </div> 
+
+
+
+     <div class="row p-0 m-0 mb-4">
+        <div class="col-md-4">
+            <div class="front-end">
+                <div class="img-cont">
+                <img src="../../../assets/back-end-rest-api.png" width="100%" alt="">
+                </div>
+                <div class="text-cont">
+                 <h3 class="heading">responsive front-end design</h3>
+                 <p class="paragraph">It is a long established fact that a reader will be distracted by the readable </p>
+                 <div class="btn-cont">
+                    <button class="btn-github"  >
+                        
+                        <span style="width: 50px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 16 16" id="github"><path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path></svg>
+                        </span>
+                    </button>
+                    <button class="btn-live" >
+                       
+                        <span style="width: 50px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" id="live-streaming"><path fill="#000" fill-rule="evenodd" d="M12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M8.82789 8.6971C7.05737 10.5181 7.05737 13.4819 8.82789 15.3029L7.39394 16.6971C4.86869 14.0998 4.86869 9.90017 7.39394 7.3029L8.82789 8.6971ZM15.1721 15.3029C16.9426 13.4819 16.9426 10.5181 15.1721 8.6971L16.6061 7.3029C19.1313 9.90017 19.1313 14.0998 16.6061 16.6971L15.1721 15.3029Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M6.69609 6.70772C3.76797 9.63076 3.76797 14.3692 6.69609 17.2923L5.2831 18.7077C1.5723 15.0033 1.5723 8.99665 5.2831 5.29228L6.69609 6.70772ZM17.3039 17.2923C20.232 14.3692 20.232 9.63077 17.3039 6.70772L18.7169 5.29228C22.4277 8.99665 22.4277 15.0033 18.7169 18.7077L17.3039 17.2923Z" clip-rule="evenodd"></path></svg>
+                        </span>
+                    </button>
+                   </div>
+              </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="front-end">
+                <div class="img-cont">
+                <img src="../../../assets/cloud-development.png" width="100%" alt="">
+                </div>
+                <div class="text-cont">
+                 <h3 class="heading">responsive front-end design</h3>
+                 <p class="paragraph">It is a long established fact that a reader will be distracted by the readable </p>
+                 <div class="btn-cont">
+                    <button class="btn-github"  >
+                       
+                        <span style="width: 50px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 16 16" id="github"><path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path></svg>
+                        </span>
+                    </button>
+                    <button class="btn-live" >
+                    
+                        <span style="width: 50px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" id="live-streaming"><path fill="#000" fill-rule="evenodd" d="M12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M8.82789 8.6971C7.05737 10.5181 7.05737 13.4819 8.82789 15.3029L7.39394 16.6971C4.86869 14.0998 4.86869 9.90017 7.39394 7.3029L8.82789 8.6971ZM15.1721 15.3029C16.9426 13.4819 16.9426 10.5181 15.1721 8.6971L16.6061 7.3029C19.1313 9.90017 19.1313 14.0998 16.6061 16.6971L15.1721 15.3029Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M6.69609 6.70772C3.76797 9.63076 3.76797 14.3692 6.69609 17.2923L5.2831 18.7077C1.5723 15.0033 1.5723 8.99665 5.2831 5.29228L6.69609 6.70772ZM17.3039 17.2923C20.232 14.3692 20.232 9.63077 17.3039 6.70772L18.7169 5.29228C22.4277 8.99665 22.4277 15.0033 18.7169 18.7077L17.3039 17.2923Z" clip-rule="evenodd"></path></svg>
+                        </span>
+                    </button>
+                   </div>
+              </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="front-end">
+                <div class="img-cont">
+                <img src="../../../assets/responsive design.png" width="100%" alt="">
+                </div>
+                <div class="text-cont">
+                 <h3 class="heading">responsive front-end design</h3>
+                 <p class="paragraph">It is a long established fact that a reader will be distracted by the readable </p>
+                 <div class="btn-cont">
+                    <button class="btn-github"  >
+                 
+                        <span style="width: 50px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 16 16" id="github"><path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path></svg>
+                        </span>
+                    </button>
+                    <button class="btn-live" >
+                    
+                        <span style="width: 50px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" id="live-streaming"><path fill="#000" fill-rule="evenodd" d="M12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M8.82789 8.6971C7.05737 10.5181 7.05737 13.4819 8.82789 15.3029L7.39394 16.6971C4.86869 14.0998 4.86869 9.90017 7.39394 7.3029L8.82789 8.6971ZM15.1721 15.3029C16.9426 13.4819 16.9426 10.5181 15.1721 8.6971L16.6061 7.3029C19.1313 9.90017 19.1313 14.0998 16.6061 16.6971L15.1721 15.3029Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M6.69609 6.70772C3.76797 9.63076 3.76797 14.3692 6.69609 17.2923L5.2831 18.7077C1.5723 15.0033 1.5723 8.99665 5.2831 5.29228L6.69609 6.70772ZM17.3039 17.2923C20.232 14.3692 20.232 9.63077 17.3039 6.70772L18.7169 5.29228C22.4277 8.99665 22.4277 15.0033 18.7169 18.7077L17.3039 17.2923Z" clip-rule="evenodd"></path></svg>
+                        </span>
+                    </button>
+                   </div>
+              </div>
+              </div>
+        </div>
+     </div> 
+
+
+
+     <button class="btn-download"><span>Load more</span>&nbsp;</button>
+    
+
+       
+
+    </div>
+
