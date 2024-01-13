@@ -104,6 +104,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/portfolio",
+            "netlifyToken": "nfp_VXKya2YFf3H9SUJMFY4kQsFUoWumL9uw0292",
+            "siteId": "32145dc3-6982-4e97-b499-8aa1e4521c6a"
+          }
         }
       }
     }
