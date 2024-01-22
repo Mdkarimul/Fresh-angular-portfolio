@@ -1,0 +1,69 @@
+<div class="cont-main">
+
+  <div class="form-cont">
+
+  
+      <h3 [ngClass]="loginBtnState ?  ' animate__animated animate__fadeInUp animate__faster' : 'animate__animated animate__fadeInDown animate__faster' ">{{ btnText }} form</h3>
+      <div class="btn-group">
+         <button type="button" class="action"   [ngClass]="signupBtnState ? 'left  ' : 'right'">{{ btnText }}</button> 
+        <button type="button" (click)="controllBtn()" class="signup-btn" >Signup</button>
+        <button type="button" (click)="controllBtn()"  class="login-btn">Login</button>
+      </div>
+      
+
+      <div  [ngClass]="loginBtnState ?  ' animate__animated animate__slideInLeft animate__faster' : '' ">
+        <ng-template  [ngIf]="loginBtnState">
+          <form [formGroup]="LoginForm"  (submit)="adminLogin($event)">
+          <input type="text" name="email" formControlName="email" placeholder="Email">
+          <input type="text" name="password" formControlName="password" placeholder="Password">
+          <button class="login-submit-btn" type="submit">Submit</button>
+          </form>
+        </ng-template>
+      </div>
+  
+
+   
+      <div  [ngClass]="signupBtnState ?  ' animate__animated animate__slideInRight animate__faster' : '' ">
+      <ng-template [ngIf]="signupBtnState">
+      <form  [formGroup]="SignupForm" (submit)="adminSignup($event)">
+
+        <!-- FULL NAME INPUT FIELD -->
+        <div class="form-group">
+          <input type="text" name="full-name" [class.input-warn]="full_name?.errors?.['required'] && full_name?.touched" formControlName="full_name" placeholder="Full name">
+          <span *ngIf="full_name?.errors?.['required'] && full_name?.touched ">This field is required !</span>
+        </div>
+  
+     <!-- EMAIL INPUT FIELDS -->
+       <div class="form-group">
+      <input type="text" name="email"  [class.input-warn]="email?.errors?.['required'] && email?.touched"  placeholder="Email" formControlName="email">
+      <span *ngIf="email?.errors?.['required'] && email?.touched ">This field is required !</span>
+      </div>
+
+      <!-- MOBILE INPUT FIELD -->
+      <div class="form-group">
+      <input type="text"  [class.input-warn]="mobile?.errors?.['required'] && mobile?.touched" name="mobile" placeholder="Mobile" formControlName="mobile">
+      <span *ngIf="mobile?.errors?.['required'] && mobile?.touched ">This field is required !</span>
+    </div>
+
+    <!-- PASSWORD INPUT FIELD -->
+      <div class="form-group">
+      <input type="text"  [class.input-warn]="password?.errors?.['required'] && password?.touched" name="password" placeholder="Password" formControlName="password">
+      <span *ngIf="password?.errors?.['required'] && password?.touched ">This field is required !</span>
+      </div>
+
+      <button class="signup-submit-btn" type="submit">Submit</button>
+      </form>
+    </ng-template>
+    </div>
+
+    <div class="social-signup">
+      <i class='bx bxl-facebook'></i>
+      <i class='bx bxl-google'></i>
+      <i class='bx bxl-twitter'></i>
+     
+    </div>
+  </div>
+</div>
+
+
+

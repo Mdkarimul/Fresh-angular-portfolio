@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+## Firebase information here
+Session id =>  A3200
+
+Cli url => https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=866997384&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+
+
+Follow this url to get the code => https://auth.firebase.tools/login?code_challenge=317rgzu-S-S2VRGkovfdNnfXVwQi2mm52ZTAAcnHkbU&session=a320031b-36a6-4c17-b54a-c5facb656434&attest=rUXR6YcaHeGOTYpGV2-FQqqx49YHOci54QqR2j8wcQY
