@@ -1,10 +1,14 @@
 .about-cont{
     width: 100%;
     height: auto;
-    // border: 1px solid red;
+   // border: 1px solid red;
     float: left;
     padding: 150px 10px;
     
+}
+.front-end{
+    color: var(--bg1);
+    font-weight: bold;
 }
 .image-cont{
     width: 90%;
@@ -57,15 +61,15 @@
     font-size: 1rem;
     position: relative;
 }
-.about-content .sub-title .one{
-    animation: one 1s ease-in infinite backwards;
-    position: relative;
-}
+// .about-content .sub-title .one{
+//     animation: one 1s ease-in infinite backwards;
+//     position: relative;
+// }
 
-@keyframes one {
-    0%{ font-size:0.5rem;font-weight: bold; }
-    100%{ font-size: 2.5rem;font-weight: bold; }
-}
+// @keyframes one {
+//     0%{ font-size:0.5rem;font-weight: bold; }
+//     100%{ font-size: 2.5rem;font-weight: bold; }
+// }
 
 .about-content .title{
     color:rgba(0, 0, 0, 0.774);
@@ -114,8 +118,7 @@
 }
 
 
-.skills .content{
-}
+
 .skills .content p {
     padding: 0px;
     margin: 0px;
@@ -127,6 +130,22 @@
     font-size: 30px;
     font-weight: bolder;
 }
+.get-in-touch{
+    color: var(--color1);
+    font-size:15px;
+    font-weight:500;
+    background-image: linear-gradient(to right ,var(--bg1), var(--bg2));
+    padding:14px 15px;
+    border: 1px solid var(--bg1);
+    border-radius: 5px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    letter-spacing: 2px; 
+    font-family: 'Poppins', sans-serif;
+    margin: 25px 0px;
+}
+
 
 @media(max-width:900px){
     .skills{

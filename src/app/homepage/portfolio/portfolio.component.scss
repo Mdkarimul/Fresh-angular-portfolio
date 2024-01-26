@@ -20,14 +20,17 @@ margin: 10px 10%;
     width: fit-content;
     list-style: none;
     padding: 0px;
-    margin:auto;
-    border: 1px solid #9318eb;
-   
+    margin:auto; 
 }
 .project-heading ul li{
     display: inline-block;
     padding: 10px 20px;
     cursor: pointer;
+    background-color: var(--bg2);
+    margin:0px 5px;
+    border-radius: 5px;
+    color: var(--color2);
+  
 }
 .project-heading ul li span{
     text-decoration: none;
@@ -36,8 +39,9 @@ margin: 10px 10%;
 }
 
 .active{
-    color: white;
+    color: rgb(184, 20, 20);
     background-color: #9318eb;
+    
 }
 
 .project-heading .subtitle-cont{

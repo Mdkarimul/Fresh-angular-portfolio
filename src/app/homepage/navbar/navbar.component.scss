@@ -1,12 +1,14 @@
 .navbar{
     background-image: linear-gradient(to right ,var(--bg1), var(--bg2));
-    padding: 10px 0px;
+    padding: 15px 0px;
+    box-shadow: 1px 1px 3px 1px var(--bg2);
 }
 .nav-link{
     color: white;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    text-transform: uppercase!important;
     
 }
 .navbar-brand{
