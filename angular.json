@@ -116,8 +116,8 @@
           "builder": "@netlify-builder/deploy:deploy",
           "options": {
             "outputPath": "dist/portfolio",
-            "netlifyToken": "nfp_VXKya2YFf3H9SUJMFY4kQsFUoWumL9uw0292",
-            "siteId": "32145dc3-6982-4e97-b499-8aa1e4521c6a"
+            "netlifyToken": "nfp_D4jBjotqaydfy6g57BRbM9BdK8tKoLi27311",
+            "siteId": "b004f307-05ab-44df-8cf7-d253077f8e5c"
           }
         }
       }
