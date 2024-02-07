@@ -30,5 +30,5 @@ export const appConfig: ApplicationConfig = {
     }))),
       importProvidersFrom(provideAuth(() => getAuth())),
        importProvidersFrom(provideFirestore(() => getFirestore())), 
-       importProvidersFrom(provideDatabase(() => getDatabase()))]
+       importProvidersFrom(provideDatabase(() => getDatabase())), importProvidersFrom(provideFirebaseApp(() => initializeApp({"projectId":"portfolio-411905","appId":"1:143977120072:web:62de3bc05b49569c62f37d","storageBucket":"portfolio-411905.appspot.com","apiKey":"AIzaSyDZrmHFDsptJamnX55IGCbREyeOh-CCyME","authDomain":"portfolio-411905.firebaseapp.com","messagingSenderId":"143977120072"}))), importProvidersFrom(provideAuth(() => getAuth())), importProvidersFrom(provideFirestore(() => getFirestore())), importProvidersFrom(provideDatabase(() => getDatabase()))]
 };

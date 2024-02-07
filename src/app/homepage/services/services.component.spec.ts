@@ -11,7 +11,7 @@ describe('ServicesComponent', () => {
 <<<<<<< HEAD
     declarations: [ServicesComponent]
 =======
-    imports: [ServicesComponent]
+    imports:  [ServicesComponent]
 >>>>>>> 39544537facb2c98129f97ba225b9cd092140912
 });
     fixture = TestBed.createComponent(ServicesComponent);
