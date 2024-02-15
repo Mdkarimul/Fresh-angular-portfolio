@@ -4,6 +4,7 @@
 
   
       <h3 [ngClass]="loginBtnState ?  ' animate__animated animate__fadeInUp animate__faster' : 'animate__animated animate__fadeInDown animate__faster' ">{{ btnText }} form</h3>
+      
       <div class="btn-group">
          <button type="button" class="action"   [ngClass]="signupBtnState ? 'left  ' : 'right'">{{ btnText }}</button> 
         <button type="button" (click)="controllBtn()" class="signup-btn" >Signup</button>

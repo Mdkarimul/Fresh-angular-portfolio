@@ -71,14 +71,14 @@ ngOnInit(): void {
   
 //LOGIN AND SIGNUP FORM CONTROLS===============>>>>
 this.LoginForm = this.fb.group({
-  email : ['',[Validators.required,Validators.email]],
-  password : ['',[Validators.required,Validators.minLength(6),Validators.maxLength(12)]]
+  email : ['7mdkarimul@gmail.com',[Validators.required,Validators.email]],
+  password : ['Md7861942',[Validators.required,Validators.minLength(6),Validators.maxLength(12)]]
 });
 this.SignupForm = this.fb.group({
-full_name : ['',[Validators.required]],
-email : ['',[Validators.required,Validators.email]],
-mobile : [,[Validators.required,Validators.minLength(10),Validators.maxLength(10)]],
-password : ['',[Validators.required,Validators.minLength(6),Validators.maxLength(12)]]
+full_name : ['karimul islam',[Validators.required]],
+email : ['7mdkarimul@gmail.com',[Validators.required,Validators.email]],
+mobile : [9749959045,[Validators.required,Validators.minLength(10),Validators.maxLength(10)]],
+password : ['Md7861942',[Validators.required,Validators.minLength(6),Validators.maxLength(12)]]
 });
 
 

@@ -4,7 +4,7 @@
       "target": "portfolio",
       "source": ".",
       "frameworksBackend": {
-        "region": "us-west1"
+        "region": "asia-east1"
       }
     }
   ]

@@ -31,6 +31,7 @@ export class AdminAuthService {
   
 
 async createAdmin(adminData:Admin){
+  console.log(adminData);
 
   this.loader.showloading();
 createUserWithEmailAndPassword(this.auth,adminData.email,adminData.password).then(async (user)=>{

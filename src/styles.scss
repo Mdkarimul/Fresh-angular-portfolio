@@ -53,3 +53,24 @@ scroll-behavior: smooth;
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// design scrollbar
+::-webkit-scrollbar{
+  width:10px;
+  background-color:var(--color2);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-button{
+
+}
+::-webkit-scrollbar-corner{
+
+}
+::-webkit-scrollbar-track{
+
+}
+::-webkit-scrollbar-thumb{
+border-radius: 5px;
+}
+::-webkit-scrollbar-track-piece{
+}
