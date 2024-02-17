@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { AdminAuthService } from '../../../services/admin-auth.service'; 
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 @Component({
   selector: 'app-sidenav',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.scss'
 })

@@ -1,0 +1,136 @@
+.project-cont{
+    width:100%;
+    height:auto;
+    // border:2px solid red;
+}
+.project{
+    width: 100%;
+    height: auto;
+    background-color:#1d1c1c;
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 1fr;
+    align-content: center;
+    padding:10px;
+    border-radius: 5px;
+}
+.project span{
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+.project .slide-cont {
+// border:1px solid red;
+}
+
+.item-1{
+    width:95%;
+    height: auto;
+    background-color: yellow;
+    margin:5px;
+    border-radius: 5px;
+}
+.item-2{
+    width: 95%;
+    height: 200px;
+    background-color: blue;
+    margin: 5px;
+}
+.item-3{
+
+    width: 95%;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 5px;
+}
+
+.item-4{
+
+    width: 95%;
+    height: 200px;
+    background-color: rgb(226, 27, 233);
+    margin: 5px;
+}
+.item-5{
+
+    width:95%;
+    height: 200px;
+    background-color: rgb(233, 147, 18);
+    margin: 5px;
+}
+.item-6{
+
+    width: 95%;
+    height: 200px;
+    background-color: rgb(12, 64, 233);
+    margin: 5px;
+}
+
+.item-7{
+
+    width: 95%;
+    height: 200px;
+    background-color: rgb(12, 64, 233);
+    margin: 5px;
+}
+.item-8{
+
+    width: 95%;
+    height: 200px;
+    background-color: rgb(12, 64, 233);
+    margin: 5px;
+}
+.item-9{
+
+    width:95%;
+    height: 200px;
+    background-color: rgb(12, 64, 233);
+    margin: 5px;
+}
+.item-10{
+
+    width: 95%;
+    height: 200px;
+    background-color: rgb(12, 64, 233);
+    margin: 5px;
+}
+.item-11{
+
+    width: 95%;
+    height: 200px;
+    background-color: rgb(12, 64, 233);
+    margin: 5px;
+}
+.item-12{
+
+    width: 95%;
+    height: 200px;
+    background-color: rgb(12, 64, 233);
+    margin: 5px;
+}
+// Bootstrap card design
+.card-title{
+    font-size: 15px;
+    padding: 0px;
+    margin:0px;
+   
+}
+.card-subtitle{
+    padding: 0px;
+    margin:0px;
+    font-size:12px;
+}
+.card-body{
+    height:200px;
+}
+.card-body img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    
+}
+
+
+
+
+

@@ -42,13 +42,15 @@ scroll-behavior: smooth;
 // ADMIN TEMPLATES CSS
 :root{
   --a-color1:#FFFF;
-  --a-color2:#666666;
+  --a-color2:#413d3d;
   --a-color3:#000;
   --a-color3:#005;
   --a-bg1:#bc11df;
   --a-bg2:#8204ca;
+  --a-bg3:#0c0b0b;
   --a-warn-color : #d46161;
   }
+
 
 
 html, body { height: 100%; }
@@ -71,6 +73,52 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 ::-webkit-scrollbar-thumb{
 border-radius: 5px;
+background-color: #000;
 }
 ::-webkit-scrollbar-track-piece{
 }
+
+
+
+.icon-design{
+  font-size: 20px;
+}
+.custom-btn{
+  border:1px solid var(--a-color2)!important;
+}
+.custom-bg-one{
+  background-color:var(--a-bg3);
+  border-radius: 5px;
+  padding: 20px;
+}
+.d-heading{
+  font-size: 18px;
+  color: var(--a-color2);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.form-control-custom{
+  width: 100%;
+  height: 50px;
+  border: 1px solid var(--a-color3);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--a-color1);
+  transition: all 0.2s;
+}
+.custom-text-area{
+  width: 100%;
+  border: 1px solid var(--a-color3);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--a-color1);
+  transition: all 0.2s;
+}
+.form-control-custom:focus,.custom-text-area:focus{
+  outline:none;
+  box-shadow: 0px 0px  2px 2px  var(--a-color2);
+  
+}
+
+
