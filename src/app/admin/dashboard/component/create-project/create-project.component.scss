@@ -28,3 +28,9 @@
     display: inline;
    font-size: 5rem;
 }
+.error{
+    border:1px solid red;
+    ::placeholder{
+        color: red;
+    }
+}

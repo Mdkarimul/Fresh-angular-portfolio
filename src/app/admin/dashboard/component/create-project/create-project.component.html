@@ -1,16 +1,19 @@
 <div class="container-fluid p-5">
   <div class="custom-bg-one row py-5">
-    <div class="col-md-1"></div>
+    
+   
     <div class="col-md-6">
+      <form action="" [formGroup]="createProject" (submit)="uploadFile($event)">
+       
       <p class="d-heading">create new preject</p>
       <br />
-      <form action="">
+    
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >Project title</label
           >
-          <input
-            type="email"
+          <input formControlName="title" [class.error]="title?.errors && title?.touched"
+            type="text"
             class="form-control-custom"
             id="exampleFormControlInput1"
             placeholder="Enter project title"
@@ -21,8 +24,8 @@
           <label for="exampleFormControlInput1" class="form-label"
             >Description</label
           >
-          <textarea
-            type="email"
+          <textarea [class.error]="description?.errors && description?.touched"
+            type="text" formControlName="description"
             rows="6"
             class="custom-text-area"
             id="exampleFormControlInput1"
@@ -31,42 +34,44 @@
         </div>
 
         <div class="mb-3">
-          <select  class="form-control-custom">
+          <select [class.error]="category?.errors && category?.touched" class="form-control-custom" formControlName="category">
            <option value="Select category">Select category</option>
             <option value="web">Web</option>
             <option value="web">Mobile</option>
             <option value="others">Others</option>
           </select>
         </div>
-        <div class="mb-3">
-            
-            <button class="btn submit-btn">Submit</button>
-        </div>
-      </form>
-    </div>
-    <div class="col-md-4">
+       
+ 
         <div style="width: 100%;height: 100px;"></div>
         <div class="upload-cont mb-3">
           <span class="material-symbols-outlined">
             backup
-            </span>
-         <input type="file" name="" id="">    
+          </span>
+         <input type="file" (change)="fileUploadChange($event)" name="" id="">    
         </div>
 
 
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Tech stacks</label
+        <label for="exampleFormControlInput1" class="form-label">Tech stacks</label
           >
-          <textarea
+          <textarea [class.error]="tech_stack?.errors && tech_stack?.touched"
             type="email"
-            rows="6"
+            rows="6" formControlName="tech_stack"
             class="custom-text-area"
             id="exampleFormControlInput1"
             placeholder="Example : html , css"
           ></textarea>
         </div>
 
+        <div class="mb-3">   
+          <button class="btn submit-btn">Submit</button>
+      </div> 
+       </form>
+
     </div>
-    <div class="col-md-1"></div>
+ 
+   
+ 
   </div>
 </div>
