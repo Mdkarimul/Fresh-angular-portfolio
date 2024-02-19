@@ -3,16 +3,17 @@ import { FormBuilder, FormControl,FormControlName,FormGroup, FormGroupDirective,
 import { StorageService } from '../../../services/storage.service';
 import ValidateForm from '../../../../helpers/validateForm';
 import { AlertService } from '../../../../services/alert.service';
+import { NgIf } from '@angular/common';
 @Component({
   selector: 'app-create-project',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule,NgIf],
   templateUrl: './create-project.component.html',
   styleUrl: './create-project.component.scss'
 })
 export class CreateProjectComponent implements OnInit {
 
-public img_upload_status: string = "";
+public loader_status: boolean =false;
 public file:File |null = null;
 @ViewChild(FormGroupDirective)
 private formDir!: FormGroupDirective;
@@ -50,41 +51,46 @@ get tech_stack() {
   return this.createProject.get('tech_stack');
 }
 
-// create new project 
- createNewProject(event:Event){
-  event.preventDefault(); 
-
-    
-    if(this.createProject.valid){
-     
-    this.fileService.createProject(this.createProject.value); 
-    this.formDir.resetForm();
-    }else{
-      
-      ValidateForm.validateAllFormFields(this.createProject);
-      this.alert.showAlert("All fields are required !" ,"Failed");
-
-    }
- }
 
 
+// GET FILE ON INPUT CHANGE EVENT  ===================>
   fileUploadChange(event:any){
   this.file =  event.target.files[0];
  }
 
+
+//  FINALLY UPLOAD IMAGE TO FIREBASE STORAGE ===========>
  async uploadFile(event:Event){
-  if(this.file){
-   await this.fileService.storeFile(this.file);
-     this.fileService.uploadSubject.subscribe({
-      next : (data)=> { 
-        if(data =="image-uploaded"){
-         this.createNewProject(event);
-        } 
-      },
-    });
+  if(this.createProject.valid){
+    if(this.file){
+        this.loader_status = true;  
+        alert(this.loader_status);                                                 
+      await this.fileService.storeFile(this.file);
+        this.fileService.uploadSubject.subscribe({
+         next : (data)=> { 
+
+           if(data =="image-uploaded"){
+            this.fileService.createProject(this.createProject.value); 
+            this.loader_status = false;
+            alert(this.loader_status);
+            setTimeout(()=>{
+              this.formDir.resetForm();
+            },3000)
+           } 
+         },
+       });
+     }else{
+       alert("Please select a file !");
+     }
   }else{
-    alert("Please select a file !");
+
+    ValidateForm.validateAllFormFields(this.createProject);
+    this.alert.showAlert("All fields are required !" ,"Failed");
+    setTimeout(()=>{
+      this.formDir.resetForm();
+    },3000)
   }
+
  }
 
 

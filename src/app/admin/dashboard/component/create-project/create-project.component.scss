@@ -19,6 +19,7 @@
     width: 100%;
     height: 100%;
     opacity: 0;
+    cursor: pointer;
 }
 .upload-cont span{
     position: absolute;
@@ -27,6 +28,7 @@
     transform: translate(-50%,-50%);
     display: inline;
    font-size: 5rem;
+   cursor: pointer;
 }
 .error{
     border:1px solid red;

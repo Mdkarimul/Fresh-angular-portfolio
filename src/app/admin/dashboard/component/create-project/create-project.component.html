@@ -53,8 +53,7 @@
 
 
         <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Tech stacks</label
-          >
+      <label for="exampleFormControlInput1" class="form-label">Tech stacks</label>
           <textarea [class.error]="tech_stack?.errors && tech_stack?.touched"
             type="email"
             rows="6" formControlName="tech_stack"
@@ -65,7 +64,11 @@
         </div>
 
         <div class="mb-3">   
-          <button class="btn submit-btn">Submit</button>
+          <button [disabled]="loader_status" class="btn submit-btn" type="submit">
+            <span *ngIf="!loader_status">Submit</span>
+            <i class='bx bx-loader-alt bx-spin bx-rotate-270' *ngIf="loader_status"></i>
+            
+          </button>
       </div> 
        </form>
 
