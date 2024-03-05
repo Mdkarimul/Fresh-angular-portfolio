@@ -126,19 +126,6 @@ margin: 10px 10%;
     cursor: pointer;
     background-color:#9318eb48;
  }
-
-
- 
-
-
-
-
-
-
-
-
-
-
 .btn-cont{
     width: fit-content;
     height: auto;
@@ -183,6 +170,14 @@ margin: 10px 10%;
     align-items: center;
     letter-spacing: 2px; 
     margin:120px auto;
+    transition: 0.5s;
+}
+.btn-download:hover {
+    box-shadow: 0px 4px 10px 1px var(--color1) inset;
+}
+.active {
+    box-shadow: 0px 4px 10px 1px var(--color1) inset;
+    border:1px solid var(--bg1)
 }
 
 

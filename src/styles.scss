@@ -3,7 +3,7 @@
 // For more information: https://material.angular.io/guide/theming
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
@@ -78,6 +78,12 @@ background-color: #000;
 ::-webkit-scrollbar-track-piece{
 }
 
+.cat-title {
+  color:var(--color3);
+  text-transform:uppercase;
+  font-size: 1rem;
+  position: relative;
+}
 
 
 .icon-design{

@@ -1,7 +1,6 @@
 .about-cont{
     width: 100%;
     height: auto;
-   // border: 1px solid red;
     float: left;
     padding: 150px 10px;
     
@@ -50,26 +49,15 @@
     height: 80%;
   
 }
-.about-content .subtitle-cont{
-   position: relative;
-   width: auto;
-   height: 50px;
-}
+
 .about-content .sub-title{
     color:#9318eb;
     text-transform:uppercase;
     font-size: 1rem;
     position: relative;
+    margin: 20px 0px;
 }
-// .about-content .sub-title .one{
-//     animation: one 1s ease-in infinite backwards;
-//     position: relative;
-// }
 
-// @keyframes one {
-//     0%{ font-size:0.5rem;font-weight: bold; }
-//     100%{ font-size: 2.5rem;font-weight: bold; }
-// }
 
 .about-content .title{
     color:rgba(0, 0, 0, 0.774);
@@ -106,6 +94,7 @@
   border-top-left-radius: 150px;
   border-bottom-left-radius: 150px;
   color: var(--color1);
+  margin: 3rem auto;
 }
 
 .skills .icon{
@@ -125,9 +114,8 @@
 }
 .skills .content span{
    
-    display: block;
+    display: inline-block;
     text-align: left;
-    font-size: 30px;
     font-weight: bolder;
 }
 .get-in-touch{
@@ -135,7 +123,7 @@
     font-size:15px;
     font-weight:500;
     background-image: linear-gradient(to right ,var(--bg1), var(--bg2));
-    padding:14px 15px;
+    padding:10px 12px;
     border: 1px solid var(--bg1);
     border-radius: 5px;
     display: flex;
@@ -143,7 +131,11 @@
     align-items: center;
     letter-spacing: 2px; 
     font-family: 'Poppins', sans-serif;
-    margin: 25px 0px;
+    transition: 0.5s;
+    margin: 30px 0px;
+}
+.get-in-touch:hover{
+    box-shadow: 0px 4px 10px 1px var(--color1) inset;
 }
 
 

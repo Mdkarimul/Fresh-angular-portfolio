@@ -8,11 +8,9 @@ describe('NavbarComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-<<<<<<< HEAD
-    declarations: [NavbarComponent]
-=======
+
+    declarations: [NavbarComponent],
     imports: [NavbarComponent]
->>>>>>> 39544537facb2c98129f97ba225b9cd092140912
 });
     fixture = TestBed.createComponent(NavbarComponent);
     component = fixture.componentInstance;
