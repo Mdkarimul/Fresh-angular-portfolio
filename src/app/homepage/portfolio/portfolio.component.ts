@@ -1,3 +1,4 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { setAlternateWeakRefImpl } from '@angular/core/primitives/signals';
 import { TitleStrategy } from '@angular/router';
@@ -7,7 +8,8 @@ import { TitleStrategy } from '@angular/router';
     selector: 'app-portfolio',
     templateUrl: './portfolio.component.html',
     styleUrls: ['./portfolio.component.scss'],
-    standalone: true
+    standalone: true,
+    imports:[NgFor]
 
 })
 export class PortfolioComponent {
@@ -54,10 +56,99 @@ export class PortfolioComponent {
             this.all = true
             break;
     }
-  
-
-
 }
+
+
+public projects:any[]  = [
+  {
+    category:"web",
+    img : "../../../assets/Angular_project_one.PNG",
+    title:"responsive angular spa",
+    description:" Html , Css , Bootstrap , Type script , Angular",
+    gitUrl:"",
+    liveUrl:"",
+    feature:true
+  },
+
+  {
+    category:"web",
+    img : "../../../assets/Angular_project_one.PNG",
+    title:"responsive angular spa",
+    description:" Html , Css , Bootstrap , Type script , Angular",
+    gitUrl:"",
+    liveUrl:"",
+    feature:true
+  },
+  {
+    category:"web",
+    img : "../../../assets/Angular_project_one.PNG",
+    title:"responsive angular spa",
+    description:" Html , Css , Bootstrap , Type script , Angular",
+    gitUrl:"",
+    liveUrl:"",
+    feature:true
+  },
+  {
+    category:"web",
+    img : "../../../assets/Angular_project_one.PNG",
+    title:"responsive angular spa",
+    description:" Html , Css , Bootstrap , Type script , Angular",
+    gitUrl:"",
+    liveUrl:"",
+    feature:true
+  },
+  {
+    category:"web",
+    img : "../../../assets/Angular_project_one.PNG",
+    title:"responsive angular spa",
+    description:" Html , Css , Bootstrap , Type script , Angular",
+    gitUrl:"",
+    liveUrl:"",
+    feature:true
+  },
+  {
+    category:"web",
+    img : "../../../assets/Angular_project_one.PNG",
+    title:"responsive angular spa",
+    description:" Html , Css , Bootstrap , Type script , Angular",
+    gitUrl:"",
+    liveUrl:"",
+    feature:true
+  },
+  {
+    category:"web",
+    img : "../../../assets/Angular_project_one.PNG",
+    title:"responsive angular spa",
+    description:" Html , Css , Bootstrap , Type script , Angular",
+    gitUrl:"",
+    liveUrl:"",
+    feature:true
+  },
+  {
+    category:"web",
+    img : "../../../assets/Angular_project_one.PNG",
+    title:"responsive angular spa",
+    description:" Html , Css , Bootstrap , Type script , Angular",
+    gitUrl:"",
+    liveUrl:"",
+    feature:true
+  },
+  {
+    category:"web",
+    img : "../../../assets/Angular_project_one.PNG",
+    title:"responsive angular spa",
+    description:" Html , Css , Bootstrap , Type script , Angular",
+    gitUrl:"",
+    liveUrl:"",
+    feature:true
+  },
+
+] 
+
+
+
+
+
 
 
 
