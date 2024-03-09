@@ -6,8 +6,6 @@
     display: grid;
     grid-template-columns: auto 70px;
     padding: 30px;
-    border:2px solid red;
-
 }
 
 .main {
@@ -34,7 +32,6 @@
     grid-template-columns: 1fr;
     grid-template-rows:1fr 70px;
     padding: 0px;
-    border: 5px solid red;
    }
    .home:hover ::after ,.about:hover ::after, .contact:hover ::after,.portfolio:hover ::after{ 
     display: none!important;
