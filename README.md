@@ -28,10 +28,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Template reference
 https://themejunction.net/html/gerold/demo/index.html
+## tech icons
+https://devicon.dev/
+ 
+## templates 
+https://preview.themeforest.net/item/edgefolio-nextjs-react-blog-portfolio-tailwindcss-template/full_screen_preview/43411972?_ga=2.62445098.701823872.1709735815-https://prev
 
 ## Firebase information here
 
 Session id =>  A3200
+https://shreethemes.in/dennis/layouts/index.html#experience
 
 Cli url => https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=866997384&redirect_uri=http%3A%2F%2Flocalhost%3A9005
 

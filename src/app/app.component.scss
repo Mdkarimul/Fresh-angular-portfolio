@@ -1,0 +1,175 @@
+.landing-page{
+    width: 100%;
+    height:100vh;
+    background-color:var(--bg3);
+    float:left;
+    display: grid;
+    grid-template-columns: auto 70px;
+    padding: 30px;
+}
+
+.main {
+    background-color: var(--bg2);
+    overflow-x:hidden;
+    overflow-y: scroll;
+
+}
+.nav {
+    background-color: var(--bg2);
+    filter: brightness(70%);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width:800px){
+   .nav {
+    display: none;
+   }
+   .landing-page {
+    grid-template-columns: 1fr;
+   }
+}
+a.active {
+    background-image: linear-gradient(to top right ,var(--color2) ,var(--color3));
+}
+.home {
+    background-image: linear-gradient(to top right ,var(--color2) ,var(--color3));
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px auto;
+    cursor: pointer;
+    box-shadow: rgba(150, 164, 189, 0.25) 0px 4px 4px -2px, rgba(160, 173, 194, 0.08) 0px 0px 0px 1px inset;
+    position: relative;
+    i {
+        color: var(--color1);
+        font-size:2.5rem;
+    }
+}
+ .home:hover ::after {
+    font-size:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "home";
+    width: 100px;
+    height:100%;
+    background-color: var(--color4);
+    color: var(--color1);
+    position: absolute;
+    left: -100px;
+    top: 0px;
+    overflow: hidden;
+    animation:slide 100ms 1;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+}
+@keyframes slide {
+    from { width: 0px; }
+    to { width: 100px; }
+}
+
+.about {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px auto;
+    cursor: pointer;
+    box-shadow: rgba(150, 164, 189, 0.25) 0px 4px 4px -2px, rgba(160, 173, 194, 0.08) 0px 0px 0px 1px inset;
+    position: relative;
+    i {
+        color: var(--color1);
+        font-size: 28px;
+    }
+}
+.about:hover ::after {
+    font-size:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "about";
+    width: 100px;
+    height:100%;
+    color: var(--color1);
+    background-color: var(--color4);
+    position: absolute;
+    left: -100px;
+    top: 0px;
+    overflow: hidden;
+    animation:slide 100ms 1;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+}
+
+.portfolio {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px auto;
+    cursor: pointer;
+    position: relative;
+    box-shadow: rgba(150, 164, 189, 0.25) 0px 4px 4px -2px, rgba(160, 173, 194, 0.08) 0px 0px 0px 1px inset;
+    i {
+        color: var(--color1);
+        font-size: 28px;
+    }
+}
+.portfolio:hover ::after {
+    font-size:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "portfolio";
+    width: 100px;
+    height:100%;
+    color: var(--color1);
+    background-color: var(--color4);
+    position: absolute;
+    left: -100px;
+    top: 0px;
+    overflow: hidden;
+    animation:slide 100ms 1;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+}
+.contact {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px auto;
+    cursor: pointer;
+    box-shadow: rgba(150, 164, 189, 0.25) 0px 4px 4px -2px, rgba(160, 173, 194, 0.08) 0px 0px 0px 1px inset;
+    i {
+        color: var(--color1);
+        font-size: 28px;
+    }
+}
+.contact:hover ::after {
+    font-size:1rem;
+    display: flex;
+    justify-content: center;
+    color: var(--color1);
+    align-items: center;
+    content: "contact";
+    width: 100px;
+    height:100%;
+    background-color: var(--color4);
+    position: absolute;
+    left: -100px;
+    top: 0px;
+    overflow: hidden;
+    animation:slide 100ms 1;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+}
+

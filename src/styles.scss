@@ -3,7 +3,7 @@
 // For more information: https://material.angular.io/guide/theming
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
@@ -22,20 +22,26 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
 }
 html {
 scroll-behavior: smooth;
+}
+body {
+  background-color: var(--color1);
+
 }
 
 // FRONT-END CLIENT CSS TEMPLATES
 :root{
 --color1:#FFFF;
---color2:#afa5a5;
---color3:#000;
---color3:#005;
---bg1:#bc11df;
---bg2:#8204ca;
+--color2:#3DCE4F;
+--color3:#B4F60C;
+--color4:#3B82F6;
+--bg1:#F59E0B;
+--bg2:#19191C;
+--bg3:#000;
 
 }
 
@@ -58,7 +64,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 // design scrollbar
 ::-webkit-scrollbar{
-  width:10px;
+  width:3px;
   background-color:var(--color2);
   border-radius: 5px;
 }
@@ -72,7 +78,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 }
 ::-webkit-scrollbar-thumb{
-border-radius: 5px;
+border-radius: 3px;
 background-color: #000;
 }
 ::-webkit-scrollbar-track-piece{
@@ -90,7 +96,30 @@ background-color: #000;
   font-size: 20px;
 }
 .custom-btn{
-  border:1px solid var(--a-color2)!important;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 16px;
+  border: none;
+  font-weight: 500;
+  letter-spacing:1.5px;
+  transition: all 0.5s;
+}
+.btn-active{
+  background-color: var(--bg1);
+  color: var(--color1);
+}
+.btn-active:hover {
+  filter: grayscale(50%);
+
+}
+.btn-deactive{
+  background-color: var(--bg2);
+  color: var(--bg1);
+}
+.btn-deactive:hover{
+  background-color: var(--bg1);
+  color: var(--color1);
 }
 .custom-bg-one{
   background-color:var(--a-bg3);
@@ -125,6 +154,16 @@ background-color: #000;
   outline:none;
   box-shadow: 0px 0px  2px 2px  var(--a-color2);
   
+}
+
+.heading {
+  color: var(--color1);
+  text-transform: capitalize;
+  font-size: 1.4rem;
+}
+.paragraph {
+  color: var(--a-color1);
+  filter:brightness(0.8)
 }
 
 
