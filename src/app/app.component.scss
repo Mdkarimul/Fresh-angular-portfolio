@@ -24,11 +24,18 @@
 }
 @media (max-width:800px){
    .nav {
-    display: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
    }
    .landing-page {
     grid-template-columns: 1fr;
+    grid-template-rows:1fr 70px;
    }
+   .home:hover ::after ,.about:hover ::after, .contact:hover ::after,.portfolio:hover ::after{ 
+    display: none!important;
+   }
+  
 }
 a.active {
     background-image: linear-gradient(to top right ,var(--color2) ,var(--color3));
