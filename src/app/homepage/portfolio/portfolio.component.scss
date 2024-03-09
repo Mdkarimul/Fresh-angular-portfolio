@@ -13,6 +13,8 @@ padding:50px;
     filter: brightness(0.8);
     padding: 20px 10px;
     .technologies {
+        padding: 20px 0px;
+
         h5{
             color: var(--color4);
             font-size:16px;
@@ -35,8 +37,9 @@ padding:50px;
         height: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
+    
         .duration {
-            padding: 20px 0px;
+            padding: 10px 0px;
             h2{
                 color: var(--color4);
                 font-size: 18px;
@@ -49,7 +52,7 @@ padding:50px;
             }
         }
         .role {
-            padding: 20px 0px;
+            padding: 10px 0px;
             h2{
                 color: var(--color4);
                 font-size: 18px;
@@ -61,6 +64,11 @@ padding:50px;
             }
         }
 
+    }
+    @media(max-width:800px){
+        .status {
+            grid-template-columns: 1fr;
+        }
     }
 }
 .project img {

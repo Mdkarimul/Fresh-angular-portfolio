@@ -7,8 +7,9 @@
 .img-cont {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../../../assets/about_pic.jpg);
+  background-image: url(../../../assets/hero.png);
   background-size: cover;
+  background-position: center center;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -106,7 +107,7 @@
     }
     @media (max-width:800px){
       .tech {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
       }
     }
     h3 {
@@ -152,6 +153,9 @@
 
 }
 
+.resume {
+  margin: 50px auto;
+}
 .resume h4{
   color: var(--color1);
 }
