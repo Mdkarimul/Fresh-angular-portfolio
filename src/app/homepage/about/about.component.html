@@ -16,9 +16,23 @@
   <div class="col-md-8 p-4">
     <div class="skills">
       <h1>I'm Specialized in </h1>
-      <h2>> mordern framework</h2>
+     
+      <h2>
+        <span style="filter: brightness(0.5);" class="fs-1 mx-1">></span> 
+        <ngx-typed-writer
+        [strings]="['Front-End Design','Back-End-Development','Mordern Frameworks']"
+        [startDelay]="3000"
+        [cursorChar]="'_'" 
+        [showCursor]="true" 
+        [backSpeed]="30"
+         [typeSpeed]="80"
+         [backSpeed]="20"
+          [loop]="true"
+           >
+       </ngx-typed-writer>
+      </h2>
 
-      <div class="dev-skills">
+      <div @show class="dev-skills">
         <div class="backend">
           <div>
             <h3>Backend-development</h3>
@@ -217,7 +231,10 @@
       </div>
 
       <!-- about me  -->
-      <div class="row mb-2">
+      <div  [@fade]="fade">
+
+     
+      <div  class="row mb-2">
         <div class="col-12 pe-5">
           <h3 class="heading">01 : about me</h3>
           <p class="paragraph">
@@ -244,6 +261,7 @@
           </p>
         </div>
       </div>
+    </div>
 
       <div class="front-end-skills">
 
@@ -258,7 +276,7 @@
   <div class="custom-row">
     <div class="experience">
        <h1 class="heading">Experience</h1>
-       <hr style="width: 100%;height:10px;background-image: linear-gradient(to top right ,var(--color2) ,var(--color3));">
+       <hr [@bar]="line" style="width: 100%;height:10px;background-image: linear-gradient(to right , var(--color4) ,var(--color2))">
        <div class="row bg-dark py-4">
         <div class="col-12 d-flex justify-content-between">
           <h4 class="mb-4">Freelancer</h4>
@@ -278,7 +296,7 @@
   
     <div class="education">
       <h1 class="heading">Education</h1>
-      <hr style="width: 100%;height:10px;background-image: linear-gradient(to top right ,var(--color2) ,#0ef006 );">
+      <hr [@bar]="line" style="width: 100%;height:10px;background-image: linear-gradient(to top right ,var(--color2) ,#0ef006 );">
       <div class="row bg-dark py-4">
         <div class="col-12 d-flex justify-content-between">
           <h4 class="mb-4">KITM collage </h4><span class="paragraph">MAKAUT - WB</span>

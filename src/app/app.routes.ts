@@ -7,16 +7,20 @@ import { ContactComponent } from './homepage/contact/contact.component';
 export const routes: Routes = [
 
     { 
-        path: '', component:HomeComponent
+        path: '', component:HomeComponent,
+        data:{animation:'home'}
    },
    {
-     path:'about',component:AboutComponent
+     path:'about',component:AboutComponent,
+     data:{animation:'about'}
    },
    {
-     path:'portfolio',component:PortfolioComponent
+     path:'portfolio',component:PortfolioComponent,
+     data:{animation:'portfolio'}
    },
    {
-     path:'contact',component:ContactComponent
+     path:'contact',component:ContactComponent,
+     data:{animation:'contact'}
    }
 
   

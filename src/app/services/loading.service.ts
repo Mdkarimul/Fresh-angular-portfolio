@@ -10,6 +10,7 @@ export class LoadingService {
   loadingAction$ = this.loadignService as Observable<boolean>
 
   constructor() { }
+  public subject = new Subject<number>();
 
   showloading (){
     this.loadignService.next(true);

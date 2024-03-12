@@ -32,6 +32,16 @@ background-image: linear-gradient(to top right ,var(--color2) ,var(--color3));
 position: absolute;
 top:50px;
 }
+.bar {
+    position: relative;
+ .line {
+    position: absolute;
+    bottom:0px;
+    height:1px;
+    background:  linear-gradient(to  right, var(--color4) ,var(--color2) ,var(--color3));
+ }
+}
+
 
 .experience , .client , .project , .libraries {
     padding: 20px;

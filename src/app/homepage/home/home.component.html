@@ -1,12 +1,12 @@
 <div class="home">
     <div class="profile d-flex justify-content-center align-items-center">
       
-        <img src="../../../assets/hero.png" class="img-fluid" alt="">
-        <h1 class="name">Md karimul islam</h1>
+        <img [@slide]="imgslide" src="../../../assets/hero.png" class="img-fluid" alt="">
+        <h1 class="name" [@fade]="fade" >Md karimul islam {{text}}</h1>
     
     </div>
     <div class="container px-5">
-        <div class="row bg-dark">
+        <div class="row bg-dark bar">
             <div class="col-md-6 d-flex justify-content-around align-items-center ">
                 <div class="experience">
                     <h3>2+</h3>
@@ -31,14 +31,23 @@
                 </div>
           
             </div>
-          
+          <div class="line" [@bar]="line"></div>
         </div>
     </div>
 
     <div class="container headings text-center d-flex justify-content-center align-items-center flex-column ">
         <h1 class="">
-            Full-Stack Developer
-    
+            <span style="filter: brightness(0.5);" class="fs-1 mx-1">></span> 
+            <ngx-typed-writer
+             [strings]="['Full-Stack Developer']"
+             [cursorChar]="'_'" 
+             [startDelay]="1000"
+             [showCursor]="true" 
+             [backSpeed]="30"
+              [typeSpeed]="80"
+               [loop]="false"
+                >
+            </ngx-typed-writer>
         </h1>
         <p class="">Sometimes five Imprimaturs are seen together dialogue-wise in the piazza of one title-page, complimenting and ducking each to other with their shaven reverences, whether the author, who stands by in perplexity at the foot of his epistle, shall to the press or to the sponge.</p>
 

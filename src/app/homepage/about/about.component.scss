@@ -79,19 +79,19 @@
 }
 .skills h1 {
   color: var(--color1);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2rem;
-}
-.skills h2 {
-  color: var(--color1);
-  font-weight: 600;
-  text-transform: capitalize;
   background: -webkit-linear-gradient(#3dce4f, #b4f60c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.skills h2 {
+  color: var(--color1);
+  text-transform: capitalize;
   font-weight: 700;
   margin-bottom: 20px;
 }
+
 .dev-skills{
   width: 100%;
   height: auto;
@@ -158,9 +158,11 @@
 }
 .resume h4{
   color: var(--color1);
+  font-size: 1rem;
 }
 .resume p {
   color: var(--color1);
+  font-size: 0.9rem;
 }
 .custom-row {
   display: grid;
