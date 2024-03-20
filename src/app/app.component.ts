@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, ChildrenOutletContexts, RouterLink, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, ChildrenOutletContexts, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { NgxTypedWriterModule } from 'ngx-typed-writer';
 import { slideInAnimation } from './homepage/animation';
 import { fromEvent } from 'rxjs';
@@ -9,7 +9,7 @@ import { LoadingService } from './services/loading.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,RouterLink,NgxTypedWriterModule],
+  imports: [CommonModule, RouterOutlet,RouterLink,RouterLinkActive , NgxTypedWriterModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
