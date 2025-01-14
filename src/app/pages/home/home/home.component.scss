@@ -10,7 +10,6 @@
 .profile img {
     z-index: 100;
     width: 400px;
-
 }
 .name {
     position: absolute;
@@ -41,26 +40,21 @@ top:50px;
     background:  linear-gradient(to  right, var(--color4) ,var(--color2) ,var(--color3));
  }
 }
-
-
 .experience , .client , .project , .libraries {
     padding: 20px;
 }
-
 .experience h3,.project h3,.libraries h3,.client h3{
     color: var(--color4);
     text-align: center;
     font-weight:800;
     font-size: 2rem;
 }
-
 .experience p,.project p,.libraries p,.client p{
     color: var(--color1);
     text-transform: capitalize;
     font-weight: 600;
     filter: brightness(0.6);
 }
-
 .headings {
     padding:50px 0px;
 }
@@ -75,9 +69,7 @@ top:50px;
     font-weight: 600;
     font-size: 1rem;
     padding: 0px 10%;
-
 }
-
 .headings > button {
     padding: 15px 20px;
     border: none;
@@ -92,7 +84,6 @@ top:50px;
     top:0px;
     left:0px;
 }
-
 .headings > button::after {
     content: "download resume";
     width:100%;
@@ -107,13 +98,23 @@ top:50px;
     align-items: center;
     transition: all 100ms linear;
 }
-
-
+.sub-headings{
+    color: var(--color3);
+}
+.skills {
+    border: 2px solid blue;
+}
+.skill {
+    width: 140px;
+    height: 150px;
+    border: 1px solid red;
+}
 @media(max-width:500px){
     .name {
         font-size: 2.5rem;
     }
 }
+
 
 
 

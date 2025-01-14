@@ -1,0 +1,195 @@
+.services-cont {
+  width: 80%;
+  height: auto;
+  float: left;
+  background-image: #ffffff;
+  padding-bottom: 50px;
+  margin: 10px 10%;
+}
+
+.service-heading {
+  width: 90%;
+  height: auto;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.service-heading .title {
+  color:var(--color3);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.front-end {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-image: linear-gradient(to right, var(--bg1), var(--bg2));
+  // border-bottom: 2px solid #9318eb;
+  padding: 20px;
+  margin: auto;
+  border-radius: 5px;
+}
+.front-end .img-cont {
+  margin: auto;
+  width: 90%;
+  height: 60%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #005;
+}
+.front-end .text-cont {
+  width: 100%;
+  height: 40%;
+}
+.front-end .text-cont {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+.front-end .text-cont .heading {
+  text-transform: uppercase;
+  color: var(--color1);
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.front-end .text-cont .paragraph {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: var(--color1);
+}
+.front-end .text-cont button {
+  border: 1px solid #9318eb;
+  width: 40%;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, var(--bg1), var(--bg2));
+}
+.front-end .text-cont button span {
+  background-color: var(--color1);
+  padding: 2px 5px;
+  border-radius: 5px;
+
+}
+
+.material-symbols-outlined {
+  color: var(--bg2);
+}
+
+.back-end {
+  width: 90%;
+  height: auto;
+  background-image: linear-gradient(to right, var(--bg1), var(--bg2));
+  padding: 20px;
+  border-radius: 5px;
+  margin: auto;
+}
+.back-end .img-cont {
+  margin: auto;
+  width: 90%;
+  height: 60%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #005;
+}
+.back-end .text-cont {
+  width: 100%;
+  height: 40%;
+}
+.back-end .text-cont {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+.back-end .text-cont .heading {
+  text-transform: uppercase;
+  color: var(--color1);
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.back-end .text-cont .paragraph {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: var(--color1);
+}
+.back-end .text-cont button {
+  border: 1px solid #9318eb;
+  width: 40%;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, var(--bg1), var(--bg2));
+}
+.back-end .text-cont button span {
+  background-color: var(--color1);
+  padding: 2px 5px;
+  border-radius: 5px;
+
+}
+
+.devops {
+  width: 90%;
+  height: auto;
+  background-image: linear-gradient(to right, var(--bg1), var(--bg2));
+  padding: 20px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.devops .img-cont {
+  margin: auto;
+  width: 90%;
+  height: 60%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #005;
+}
+.devops .text-cont {
+  width: 100%;
+  height: 40%;
+}
+.devops .text-cont {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+.devops .text-cont .heading {
+  text-transform: uppercase;
+  color: var(--color1);
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.devops .text-cont .paragraph {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: var(--color1);
+}
+.devops .text-cont button {
+  border: 1px solid #9318eb;
+  width: 40%;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, var(--bg1), var(--bg2));
+}
+.devops .text-cont button span {
+  background-color: var(--color1);
+  padding: 2px 5px;
+  border-radius: 5px;
+}

@@ -1,19 +1,20 @@
-<div class="landing-page" style="border: 1px solid red">
+<div class="landing-page">
   <div class="main" #scrollableElement>
     <router-outlet></router-outlet>
   </div>
   <div class="nav">
     <div class="home">
-      <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"
-        ><i class="bx bx-home-alt"></i
+      <a routerLink="/" routerLinkActive="active" class="w-100 h-100 d-flex justify-content-center align-items-center" ariaCurrentWhenActive="page"
+        ><i class="bx bx-home overflow-hidden"></i
       ></a>
     </div>
     <div class="about">
       <a
+        class="w-100 h-100 d-flex justify-content-center align-items-center"
         routerLink="/about"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
-        ><i class="bx bx-user"></i
+        ><i class="bx bxs-user overflow-hidden"></i
       ></a>
     </div>
     <div class="services">
@@ -21,23 +22,22 @@
         routerLink="/services"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
-        ><i class="bx bx-user"></i
       ></a>
     </div>
     <div class="portfolio">
       <a
-        routerLink="/portfolio"
+        routerLink="/portfolio" class="d-flex justify-content-center align-items-center w-100 h-100"
         ariaCurrentWhenActive="page"
         routerLinkActive="active"
-        ><i class="bx bxs-contact"></i
+        ><i class="bx bxs-contact overflow-hidden"></i
       ></a>
     </div>
     <div class="contact">
-      <a
+      <a class="d-flex justify-content-center align-items-center w-100 h-100"
         routerLink="/contact"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
-        ><i class="bx bx-award"></i
+        ><i class="bx bx-award overflow-hidden"></i
       ></a>
     </div>
   </div>
