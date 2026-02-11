@@ -30,6 +30,7 @@ padding:50px;
              h3{
                 font-size: 1.5rem;
                 font-weight: 600;
+                text-transform: uppercase;
              }
              p {
                 font-weight: 500;
@@ -77,6 +78,44 @@ padding:50px;
     background-color: var(--bg2);
     filter: brightness(0.8);
     padding: 20px 10px;
+
+    .link-group {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        display: flex;
+        gap: 10px;
+        a {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    .heading {
+        color: var(--color1);
+        font-size: 15px;
+        text-transform:lowercase;
+    }
+    .heading:first-letter{
+        text-transform:uppercase;
+    }
+    .paragraph {
+        color: var(--color1);
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
     .technologies {
         padding: 0px 0px;
 
@@ -85,12 +124,17 @@ padding:50px;
             font-size:16px;
 
         }
+        .tech-tools {
+            display: flex;
+            flex-wrap: wrap;
+        }
         span {
             padding: 8px 12px;
             background-color: rgba(61, 206, 78, 0.096);
             margin: 5px 5px 5px 0px;
             color: var(--color2); 
             cursor: pointer;
+            text-transform: uppercase;
         }
         span:hover{
             background-color: rgba(61, 206, 78, 0.397);
@@ -110,6 +154,7 @@ padding:50px;
                 font-size: 18px;
                 padding: 0px;
                 margin: 0px;
+                
 
             }
             span {

@@ -1,6 +1,6 @@
 
 <div class="container-fluid main">
-<h2 class="heading fs-2 fw-bold">My Open-Source Projects</h2>
+<h2 class="heading text-uppercase fs-2 fw-bold">My Open-Source Projects</h2>
 <p class="paragraph  my-4">Discover my most popular open-source projects on Github.</p>
 
 <div class="open-sources">
@@ -53,24 +53,38 @@
 </div>
 
 
-<h2 class="heading fs-2 fw-bold">Latest Projects</h2>
+<h2 class="heading fs-2 fw-bold text-uppercase">Latest Projects</h2>
 <p class="paragraph  my-4">I have transformed ideas into remarkable digital products.</p>
 
+
+
+
+
+
+@for(project of projects; track project.title) {
+
 <div class="project">
     <div class="row p-0 m-0">
-     <div class="col-md-6 p-0 m-0 " style="overflow: hidden;">
-        <img src="../../../assets/Angular_project_two.PNG" alt="">
-       
+     <div class="col-md-6 position-relative" style="overflow: hidden;">
+        <img src="{{project.img}}" alt="">
+         <div class="link-group">
+            <a href="{{project.liveUrl}}" target="_blank">
+                <i class="bx bx-link"></i>
+            </a>
+            <a href="{{project.gitUrl}}" target="_blank">
+                <i class="bx bx-git-merge"></i>
+            </a>
+         </div>
      </div>
      <div class="col-md-6">
-        <h2 class="heading fs-3 my-3 fw-bold ">crypt website development for Denix</h2>
-        <p class="paragraph my-4">The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us.</p>
+        <h2 class="heading fs-3 my-2 fw-bold ">{{project.title}}</h2>
+        <p class="paragraph my-2">{{project.description}}</p>
         <div class="technologies">
             <h5 class="my-3">Technologies</h5>
-            <div>
-                <span>Next js</span>
-                <span>Stripe</span>
-                <span>Shopify</span>
+            <div class="tech-tools">
+                @for(tech of project.technologies; track tech) {
+                    <span>{{tech}}</span>
+                }
             </div>
         </div>
         <div class="status">
@@ -88,119 +102,14 @@
      </div>
     </div>
 </div>
+}
 
 
 
-<div class="project">
-    <div class="row p-0 m-0">
-     <div class="col-md-6" style="overflow: hidden;">
-        <img src="../../../assets/Angular_project_two.PNG" alt="">
-       
-     </div>
-     <div class="col-md-6">
-        <h2 class="heading fs-3 my-3 fw-bold ">crypt website development for Denix</h2>
-        <p class="paragraph my-4">The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us.</p>
-        <div class="technologies">
-            <h5 class="my-3">Technologies</h5>
-            <div>
-                <span>Next js</span>
-                <span>Stripe</span>
-                <span>Shopify</span>
-            </div>
-        </div>
-        <div class="status">
-            <div class="duration">
-           <h2 >Duration</h2>
-           <span>3 Months</span>
-            </div>
-            <div class="role">
-            <h2>
-                Role
-            </h2>
-            <span>Full stack developer</span>
-            </div>
-        </div>
-     </div>
-    </div>
-</div>
 
 
-<div class="project">
-    <div class="row p-0 m-0">
-     <div class="col-md-6" style="overflow: hidden;">
-        <img src="../../../assets/Angular_project_one.PNG" alt="">
-       
-     </div>
-     <div class="col-md-6">
-        <h2 class="heading fs-3 fw-bold my-3 ">crypt website development for Denix</h2>
-        <p class="paragraph my-4">The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us.</p>
-        <div class="technologies">
-            <h5 class="my-3">Technologies</h5>
-            <div class="mb-2">
-                <span>Next js</span>
-                <span>Stripe</span>
-                <span>Shopify</span>
-            </div>
-        </div>
-        <div class="status">
-            <div class="duration">
-           <h2 >Duration</h2>
-           <span>3 Months</span>
-            </div>
-            <div class="role">
-            <h2>
-                Role
-            </h2>
-            <span>Full stack developer</span>
-            </div>
-        </div>
-     </div>
-    </div>
-</div>
 
 
-           <!-- <div class="project-heading">
-            <h2 class="title">Portfolio</h2>
-             <ul>
-                <li [class.active]="all" (click)="project_tab('all')" #ele><span>All</span></li>
-                <li [class.active]="web" (click)="project_tab('web')" #ele><span>Web</span></li>
-                <li [class.active]="mobile" (click)="project_tab('mobile')" #ele><span>Mobile</span></li>
-                <li [class.active]="others" (click)="project_tab('others')" #ele><span>Others</span></li>
-             </ul>
-        </div>  
-
-      
-      <div class="row p-0 m-0 mb-4">
-        <div *ngFor="let project of projects" class="col-md-4">
-            <div  class="front-end">
-                <div class="img-cont">
-                 <img src="../../../assets/Angular_project_one.PNG" alt=""> 
-                </div>
-                <div class="text-cont">
-                 <h3 class="heading">Responsive angular SPA</h3>
-                 <p class="paragraph"><b>Tech : </b>Html , Css , Bootstrap , Type script , Angular </p>
-                 <div class="btn-cont">
-                    <button class="btn-github"  >
-                      
-                        <span style="width: 50px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 16 16" id="github"><path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path></svg>
-                        </span>
-                       
-                    </button>
-                    <button class="btn-live" >
-                        <a href="https://mdkarimul.netlify.app">
-                        <span style="width: 50px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" id="live-streaming"><path fill="#000" fill-rule="evenodd" d="M12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M8.82789 8.6971C7.05737 10.5181 7.05737 13.4819 8.82789 15.3029L7.39394 16.6971C4.86869 14.0998 4.86869 9.90017 7.39394 7.3029L8.82789 8.6971ZM15.1721 15.3029C16.9426 13.4819 16.9426 10.5181 15.1721 8.6971L16.6061 7.3029C19.1313 9.90017 19.1313 14.0998 16.6061 16.6971L15.1721 15.3029Z" clip-rule="evenodd"></path><path fill="#000" fill-rule="evenodd" d="M6.69609 6.70772C3.76797 9.63076 3.76797 14.3692 6.69609 17.2923L5.2831 18.7077C1.5723 15.0033 1.5723 8.99665 5.2831 5.29228L6.69609 6.70772ZM17.3039 17.2923C20.232 14.3692 20.232 9.63077 17.3039 6.70772L18.7169 5.29228C22.4277 8.99665 22.4277 15.0033 18.7169 18.7077L17.3039 17.2923Z" clip-rule="evenodd"></path></svg>
-                        </span>
-                        </a>
-                    </button>
-                   </div>
-              </div>
-              </div>
-        </div>
-     </div> 
-     <button class="btn-download"><span>Load more</span>&nbsp;</button>
-     -->
 
        
 
