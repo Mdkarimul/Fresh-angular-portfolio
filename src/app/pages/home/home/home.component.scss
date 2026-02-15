@@ -70,34 +70,34 @@ top:50px;
     font-size: 1rem;
     padding: 0px 10%;
 }
-.headings > button {
-    padding: 15px 20px;
-    border: none;
-    text-transform: capitalize;
-    position: relative;
-    background-image: linear-gradient(to top right ,var(--color2) ,var(--color3));
-    font-weight: 600;
-    letter-spacing: 2px;
-    filter: brightness(0.8);
-}
-.headings button:hover::after {
-    top:0px;
-    left:0px;
-}
-.headings > button::after {
-    content: "download resume";
-    width:100%;
-    height: 100%;
-    background-color: var(--color1);
-    position: absolute;
-    top:-10px;
-    left: -10px;
-    text-transform: capitalize;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 100ms linear;
-}
+// .headings > button {
+//     padding: 15px 20px;
+//     border: none;
+//     text-transform: capitalize;
+//     position: relative;
+//     background-image: linear-gradient(to top right ,var(--color2) ,var(--color3));
+//     font-weight: 600;
+//     letter-spacing: 2px;
+//     filter: brightness(0.8);
+// }
+// .headings button:hover::after {
+//     top:0px;
+//     left:0px;
+// }
+// .headings > button::after {
+//     content: "download resume";
+//     width:100%;
+//     height: 100%;
+//     background-color: var(--color1);
+//     position: absolute;
+//     top:-10px;
+//     left: -10px;
+//     text-transform: capitalize;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     transition: all 100ms linear;
+// }
 .sub-headings{
     color: var(--color3);
 }
