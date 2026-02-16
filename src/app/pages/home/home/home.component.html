@@ -1,80 +1,184 @@
 <div class="home">
-    <div class="profile d-flex justify-content-center align-items-center">
+  <div class="profile d-flex justify-content-center align-items-center">
+    <img
+      [@slide]="imgslide"
+      src="../../../assets/hero.png"
+      class="img-fluid"
+      alt=""
+    />
+    <h1 class="name text-center" [@fade]="fade">Md karimul islam {{ text }}</h1>
+  </div>
+  <div class="container px-3 px-md-5 my-2">
+    <div class="row bg-dark bar">
+      <div class="col-md-6 d-flex justify-content-around align-items-center">
+        <div class="experience">
+          <h3>2+</h3>
+          <p class="text-center">Years of experience</p>
+        </div>
+
+        <div class="project">
+          <h3>10+</h3>
+          <p class="text-center">project completed</p>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex justify-content-around align-items-center">
+        <div class="libraries">
+          <h3>12+</h3>
+          <p class="text-center">openSource library</p>
+        </div>
+
+        <div class="client">
+          <h3>15+</h3>
+          <p class="text-center">Happy clients</p>
+        </div>
+      </div>
+      <div class="line" [@bar]="line"></div>
+    </div>
+  </div>
+
+  <div
+    class="container headings text-center d-flex justify-content-center align-items-center flex-column"
+  >
+    <h1 class="">
+      <span style="filter: brightness(0.5)" class="fs-1 mx-1">></span>
+      <ngx-typed-writer
+        [strings]="['Full-Stack Developer']"
+        [cursorChar]="'_'"
+        [startDelay]="1000"
+        [showCursor]="true"
+        [backSpeed]="30"
+        [typeSpeed]="80"
+        [loop]="false"
+      >
+      </ngx-typed-writer>
+    </h1>
+    <p class="text-center">
+      Sometimes five Imprimaturs are seen together dialogue-wise in the piazza
+      of one title-page, complimenting and ducking each to other with their
+      shaven reverences, whether the author, who stands by in perplexity at the
+      foot of his epistle, shall to the press or to the sponge.
+    </p>
+
+    <button>
+      <a
+        href="https://drive.google.com/file/d/102u6DrMTWueZMmYMhebOTqzPIQEZtAqL/view"
+        >Download resume</a
+      >
+    </button>
+  </div>
+
+  <!-- skills container start here -->
+<div class="container-sm">
+    <h3 class="sub-headings">Key skills</h3>
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-md-2 bg-dark skill py-4">
+        <div
+          class="heading mb-4 d-flex justify-content-start align-items-start"
+        >
+          <div class="bg-light p-1 px-3 rounded-2 me-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#000000"
+              viewBox="0 0 24 24"
+            >
+              <path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM10 4h4v2h-4V4zm10 16H4V8h16v12z"/>
+            </svg>
+          </div>
+          <h5 class="text-light p-0 m-0 text-uppercase">Project Management</h5>
+        </div>
+        <div class="description " style="color:var(--color4)">
+          <p>
+            Agile methodologies, Scrum framework, sprint planning, and team coordination for successful project delivery.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-2 bg-dark skill py-4">
+        <div
+          class="heading mb-4 d-flex justify-content-start align-items-start"
+        >
+          <div class="bg-light p-1 px-3 rounded-2 me-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#000000"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
+            </svg>
+          </div>
+          <h5 class="text-light p-0 m-0 text-uppercase">Quality Assurance</h5>
+        </div>
+        <div class="description " style="color:var(--color4)">
+          <p>
+            Test automation, manual testing, regression testing, and bug tracking to ensure software quality and reliability.
+          </p>
+        </div>
+      </div>
       
-        <img [@slide]="imgslide" src="../../../assets/hero.png" class="img-fluid" alt="">
-        <h1 class="name" [@fade]="fade" >Md karimul islam {{text}}</h1>
-    
-    </div>
-    <div class="container px-5">
-        <div class="row bg-dark bar">
-            <div class="col-md-6 d-flex justify-content-around align-items-center ">
-                <div class="experience">
-                    <h3>2+</h3>
-                    <p>Years of experience</p>
-                </div>
-
-                <div class="project">
-                    <h3>10+</h3>
-                    <p>project completed</p>
-                </div>
-         
-            </div>
-            <div class="col-md-6 d-flex justify-content-around  align-items-center  ">
-                <div class="libraries">
-                    <h3>12+</h3>
-                    <p>openSource library</p>
-                </div>
-
-                <div class="client">
-                    <h3>15+</h3>
-                    <p>Happy clients</p>
-                </div>
-          
-            </div>
-          <div class="line" [@bar]="line"></div>
+      <div class="col-md-2 bg-dark skill py-4">
+        <div
+          class="heading mb-4 d-flex justify-content-start align-items-start"
+        >
+          <div class="bg-light p-1 px-3 rounded-2 me-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#000000"
+              viewBox="0 0 24 24"
+            >
+              <path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
+            </svg>
+          </div>
+          <h5 class="text-light p-0 m-0 text-uppercase">Web Development</h5>
         </div>
-    </div>
-
-    <div class="container headings text-center d-flex justify-content-center align-items-center flex-column ">
-        <h1 class="">
-            <span style="filter: brightness(0.5);" class="fs-1 mx-1">></span> 
-            <ngx-typed-writer
-             [strings]="['Full-Stack Developer']"
-             [cursorChar]="'_'" 
-             [startDelay]="1000"
-             [showCursor]="true" 
-             [backSpeed]="30"
-              [typeSpeed]="80"
-               [loop]="false"
-                >
-            </ngx-typed-writer>
-        </h1>
-        <p class="">Sometimes five Imprimaturs are seen together dialogue-wise in the piazza of one title-page, complimenting and ducking each to other with their shaven reverences, whether the author, who stands by in perplexity at the foot of his epistle, shall to the press or to the sponge.</p>
-
-        <button>
-           
-           
-        </button>
-         <a href="https://drive.google.com/file/d/102u6DrMTWueZMmYMhebOTqzPIQEZtAqL/view">go fast</a>
-          <a href="https://docs.google.com/document/d/1SrLUIRZX05ptlxW-4Aa9DR5KcOogsD1g2cf5mcjmiC8/edit?usp=sharing">download resume</a>
-    </div>
-
-
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-md-2">
-                <h3 class="sub-headings">Key skills</h3> 
-              </div>
-              <div class="col-md-10 p-0 m-0 skills d-flex justify-content-between align-items-center">
-                    <div class="skill"></div>
-                    <div class="skill"></div>
-                    <div class="skill"></div>
-                    <div class="skill"></div>
-                    <div class="skill"></div>
-              </div>
+        <div class="description" style="color:var(--color4)">
+          <p>
+            HTML5, CSS3, JavaScript, React, and responsive design principles for modern web applications.
+          </p>
         </div>
-    </div> -->
+      </div>
+      
+      <div class="col-md-2 bg-dark skill py-4">
+        <div
+          class="heading mb-4 d-flex justify-content-start align-items-start"
+        >
+          <div class="bg-light p-1 px-3 rounded-2 me-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#000000"
+              viewBox="0 0 24 24"
+            >
+              <path d="M21 6h-2v3h-2V6h-2V4h2V1h2v3h2v2zm-6-2v2h-2V4h2zm-6 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+            </svg>
+          </div>
+          <h5 class="text-light p-0 m-0 text-uppercase">Data Analysis</h5>
+        </div>
+        <div class="description" style="color:var(--color4)">
+          <p>
+            Statistical analysis, data visualization, Python, R, and machine learning algorithms for business insights.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Skills container end here -->
 
+  <div class="next-button">
+<button class="bg-dark">
+ <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+fill="#ffffff" viewBox="2 2 20 20" >
+<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+<path d="M11 2v7H7l5 6 5-6h-4V2z"></path><path d="M5 13H3c0 4.96 4.04 9 9 9s9-4.04 9-9h-2c0 3.86-3.14 7-7 7s-7-3.14-7-7"></path>
+</svg>
+</button>
+  </div>
 
 
 </div>
