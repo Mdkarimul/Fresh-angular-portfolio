@@ -169,9 +169,26 @@
   grid-template-columns: 1fr 50px 1fr;
 }
 
+.education , .experience {
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+}
+.experience {
+  border: 1px solid rgba(255, 255, 255, 0.685);
+  border-radius: 5px;
+}
+.education {
+  width: 100%;
+   border: 1px solid rgba(255, 255, 255, 0.685);
+  border-radius: 5px;
+}
+
+
+
 @media(max-width:800px){
   .custom-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .experience {
     margin-bottom: 40px;
