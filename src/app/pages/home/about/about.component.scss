@@ -155,7 +155,6 @@
 
 .resume {
   margin: 50px auto;
-  border:1px solid red;
 }
 .resume h4{
   color: var(--color1);
@@ -168,7 +167,6 @@
 .custom-row {
   display: grid;
   grid-template-columns: 1fr 50px 1fr;
-  border:2px solid yellow;
 }
 
 .education , .experience {

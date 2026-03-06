@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, inject, OnDestroy, OnInit, ViewChild } from '@angular/core';
 
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { ServicesComponent } from '../services/services.component';
@@ -7,12 +7,14 @@ import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { ContactComponent } from '../contact/contact.component';
 import { ClientFeedComponent } from '../client-feed/client-feed.component';
 
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { imgSlide,fadeIn,barLine } from '../animation';
 
 import { LoadingService } from '../../../core/services/loading.service';
 import { Observable, Subscription } from 'rxjs';
 import { NgxTypedWriterModule } from 'ngx-typed-writer';
+import { ViewportScroller } from '@angular/common';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -34,6 +36,9 @@ barLine
 
     }
 
+    router = inject(Router);
+    viewPortScroll = inject(ViewportScroller);
+
     private sub: Subscription = new Subscription;
     public writeArr :string[] = ['karimul','index'];
     public index:number = 0;
@@ -51,6 +56,14 @@ barLine
    this.fade = 'fadeIn'
     },100)
     }
+
+    nextPage() {
+      alert('Next !');
+      this.viewPortScroll.scrollToPosition([200,300]);
+      this.router.navigate(['/about']);
+      
+    }
+
 
    
 
